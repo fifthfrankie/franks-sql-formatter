@@ -3,7 +3,7 @@
   "displayName": "Frank's SQL Formatter",
   "publisher": "FrankieSeabrook",
   "description": "Format SQL, Frank's way",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/fifthfrankie/franks-sql-formatter"
@@ -29,22 +29,27 @@
     ],
     "contributes": {
       "languages": [
-    {
-      "id": "sql",
-      "aliases": ["SQL", "sql"],
-      "extensions": [".sql"]
-    }
-  ],
-  "commands": [
-    {
-      "command": "franks-sql-formatter.helloWorld",
-      "title": "Format SQL, Frank's way"
-    }
-  ],
-  "configuration": {
-    "title": "Frank's SQL Formatter",
-    "properties": {}
-  },
+        {
+          "id": "sql",
+          "aliases": [
+            "SQL",
+            "sql"
+          ],
+          "extensions": [
+            ".sql"
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "command": "franks-sql-formatter.helloWorld",
+          "title": "Format SQL, Frank's way"
+        }
+      ],
+      "configuration": {
+        "title": "Frank's SQL Formatter",
+        "properties": {}
+      },
       "keybindings": [
         {
           "command": "sql-formatter.helloWorld",
