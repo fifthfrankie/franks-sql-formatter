@@ -1,0 +1,62 @@
+{
+  "name": "franks-sql-formatter",
+  "displayName": "Frank's SQL Formatter",
+  "publisher": "FrankieSeabrook",
+  "description": "Format SQL queries, Frank's way",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fifthfrankie/franks-sql-formatter"
+  },
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:sql"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "franks-sql-formatter.helloWorld",
+        "title": "franks-sql-formatter",
+        "icon": "img/franks-sql-formatter.png"
+      }
+    ],
+    "contributes": {
+    "keybindings": [
+        {
+            "command": "sql-formatter.helloWorld",
+            "key": "ctrl+alt+f",
+            "when": "editorTextFocus && editorLangId == 'sql'"
+        }
+    ]
+}
+
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.99.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "sql-formatter": "^15.6.0"
+  }
+}
