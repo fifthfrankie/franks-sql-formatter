@@ -3,7 +3,7 @@
   "displayName": "Frank's SQL Formatter",
   "publisher": "FrankieSeabrook",
   "description": "Format SQL, Frank's way",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/fifthfrankie/franks-sql-formatter"
