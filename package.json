@@ -2,8 +2,8 @@
   "name": "franks-sql-formatter",
   "displayName": "Frank's SQL Formatter",
   "publisher": "FrankieSeabrook",
-  "description": "Format SQL queries, Frank's way",
-  "version": "0.1.0",
+  "description": "Format SQL, Frank's way",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/fifthfrankie/franks-sql-formatter"

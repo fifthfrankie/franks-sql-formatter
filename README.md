@@ -1,6 +1,6 @@
 # Frank's SQL Formatter
 
-A clean, opinionated SQL formatter for data professionals who want readable SQL, Frank's way.
+A clean, opinionated SQL formatter for data professionals who want readable SQL.
 
 ![Demo](img/franks-sql-formatter.gif)
 
@@ -8,7 +8,6 @@ A clean, opinionated SQL formatter for data professionals who want readable SQL,
 
 - Formats SQL to a consistent, readable style
 - Smart handling of SELECT columns, JOINs, QUALIFY, and GROUP BY
-- Works great with Power BI, Qlik, Teradata, SQL Server, Databricks, and more
 
 ## Usage
 
@@ -49,18 +48,12 @@ GROUP BY
     3;
 ```
 
-## Why Frank's?
-
-* No more fighting with inconsistent SQL styles
-* Designed for real-world analytics and BI workflows
-* Fast, simple, and open source
-
-## Known Issues
-
---
-
 ## Release Notes
 
 ### 0.0.1
 
 Initial release of franks-sql-formatter
+
+### 0.0.2
+
+Minor: Update logo and README.
