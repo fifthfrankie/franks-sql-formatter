@@ -3,7 +3,7 @@
   "displayName": "Frank's SQL Formatter",
   "publisher": "FrankieSeabrook",
   "description": "Format SQL queries, Frank's way",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/fifthfrankie/franks-sql-formatter"
@@ -28,15 +28,14 @@
       }
     ],
     "contributes": {
-    "keybindings": [
+      "keybindings": [
         {
-            "command": "sql-formatter.helloWorld",
-            "key": "ctrl+alt+f",
-            "when": "editorTextFocus && editorLangId == 'sql'"
+          "command": "sql-formatter.helloWorld",
+          "key": "ctrl+alt+f",
+          "when": "editorTextFocus && editorLangId == 'sql'"
         }
-    ]
-}
-
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
