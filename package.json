@@ -28,6 +28,23 @@
       }
     ],
     "contributes": {
+      "languages": [
+    {
+      "id": "sql",
+      "aliases": ["SQL", "sql"],
+      "extensions": [".sql"]
+    }
+  ],
+  "commands": [
+    {
+      "command": "franks-sql-formatter.helloWorld",
+      "title": "Format SQL, Frank's way"
+    }
+  ],
+  "configuration": {
+    "title": "Frank's SQL Formatter",
+    "properties": {}
+  },
       "keybindings": [
         {
           "command": "sql-formatter.helloWorld",
