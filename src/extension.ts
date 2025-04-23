@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
-import { sqlFormatter } from './sqlFormatter';
+import { SQLFormatter } from './sqlFormatter';
 
 export function activate(context: vscode.ExtensionContext) {
     // Command for manual formatting
     let disposable = vscode.commands.registerCommand(
-        'franks-sql-formatter.helloWorld',
+        'franks-sql-formatter.format',
         () => {
             const editor = vscode.window.activeTextEditor;
             if (!editor) {
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
                 ? document.getText()
                 : document.getText(selection);
 
-            const formatter = new sqlFormatter();
+            const formatter = new SQLFormatter();
             const formatted = formatter.format(sql);
 
             editor.edit(editBuilder => {
@@ -41,7 +41,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.languages.registerDocumentFormattingEditProvider('sql', {
             provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
                 const sql = document.getText();
-                const formatter = new sqlFormatter();
+                const formatter = new SQLFormatter();
                 const formatted = formatter.format(sql);
                 const firstLine = document.lineAt(0);
                 const lastLine = document.lineAt(document.lineCount - 1);
@@ -52,4 +52,4 @@ export function activate(context: vscode.ExtensionContext) {
     );
 }
 
-export function deactivate() {}
+export function deactivate() { }

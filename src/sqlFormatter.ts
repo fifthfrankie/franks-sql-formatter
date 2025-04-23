@@ -1,4 +1,4 @@
-export class sqlFormatter {
+export class SQLFormatter {
     private indentString = '    '; // 4 spaces for indentation
     private indentLevel = 0;
 
@@ -258,7 +258,7 @@ export class sqlFormatter {
         this.indentLevel++;
 
         // Recursively format subquery
-        const subFormatter = new sqlFormatter();
+        const subFormatter = new SQLFormatter();
         const formattedSubquery = subFormatter.format(subquery).split('\n');
         for (const line of formattedSubquery) {
             lines.push(this.indent(line));
